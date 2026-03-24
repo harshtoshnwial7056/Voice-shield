@@ -1,0 +1,14 @@
+node_modules/
+voiceshield-frontend/node_modules/
+voiceshield-frontend/build/
+Backend/.env
+Backend/uploads/
+uploads/
+.cache/
+npm-debug.log*
+sampel data set/
+model/
+Backend/python/voice_model.pkl
+*.pkl
+*.wav
+tempCodeRunnerFile.py
