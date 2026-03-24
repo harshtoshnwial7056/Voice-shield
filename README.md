@@ -1,2 +1,1 @@
-# Voice-shield
-AI Voice Detection App using React, Express &amp; Python ML
+VoiceShield is a full-stack AI-powered web application that detects whether an audio sample is human or AI-generated. It is built using React.js for the frontend and Node.js with Express.js for the backend, integrated with a Python-based machine learning model for audio classification. The system includes secure authentication features like login, registration, and forgot password, along with Cloudinary for audio storage and MongoDB for data management.
