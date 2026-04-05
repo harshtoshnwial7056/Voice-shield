@@ -4,7 +4,7 @@ const cors = require("cors");
 // ✅ IMPORTANT: load .env from backend folder
 require("dotenv").config({ path: __dirname + "/.env" });
 
-const connectDB = require("./config/db");
+const connectDB = require("./Config/db");
 
 const authRoutes = require("./routes/authRoutes");
 const predictRoutes = require("./routes/predictRoutes");

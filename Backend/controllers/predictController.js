@@ -1,4 +1,4 @@
-const cloudinary = require("../config/cloudinary");
+const cloudinary = require("../Config/cloudinary");
 const Result = require("../models/Result");
 const { exec } = require("child_process");
 const fs = require("fs");
@@ -37,7 +37,13 @@ const getModelConfig = (requestedModelType) => {
   };
 };
 
-const resolvePythonCommand = () => process.env.PYTHON_COMMAND || "py";
+const resolvePythonCommand = () => {
+  if (process.env.PYTHON_COMMAND) {
+    return process.env.PYTHON_COMMAND;
+  }
+
+  return process.platform === "win32" ? "py" : "python3";
+};
 const removeFileIfExists = (filePath) => {
   if (!filePath || !fs.existsSync(filePath)) {
     return;
